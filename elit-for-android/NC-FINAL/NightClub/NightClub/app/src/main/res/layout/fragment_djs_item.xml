@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/dj_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/plholder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@drawable/event_description_bckg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/dj_description"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="#fff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="24sp">
+
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/player_background"/>
+
+    <LinearLayout
+        android:id="@+id/layout_mix_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#6f000000"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/mix_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textSize="30sp"
+            android:text="Mix title"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_mix_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/disk_icon"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6f000000"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/current_position_text"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:text="00:00"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/current_position_text"
+            android:layout_toLeftOf="@+id/duration_text"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/button_skip_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_av_skip_previous"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/button_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_av_play_arrow"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/button_skip_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_av_skip_next"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/duration_text"
+            android:layout_width="60dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:text="06:60"/>
+    </RelativeLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mix_progress"
+        android:layout_above="@+id/layout_navigation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:thumb="@drawable/ic_image_lens"
+        android:progressDrawable="@drawable/seek_bar_style"/>
+
+
+</RelativeLayout>

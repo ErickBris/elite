@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation_layout">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/nightclub_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/nightclub_logo"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nightclub_logo"
+        android:layout_above="@+id/phone_label">
+
+        <TextView
+            android:id="@+id/about_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:text="nightClub description"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/address_text"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="Phone:"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/address_text"
+        android:layout_toRightOf="@+id/address_label"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="example phone"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/address_text"
+        android:layout_above="@+id/navigation_layout"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="Address:"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigation_layout"
+        android:layout_toRightOf="@+id/address_label"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="example address example address example address example address example address "
+        android:padding="5dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/navigation_layout"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/map_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_device_gps_fixed"
+            android:background="@drawable/white_circle_background"/>
+
+        <ImageButton
+            android:id="@+id/email_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_communication_chat"
+            android:background="@drawable/white_circle_background"/>
+
+        <ImageButton
+            android:id="@+id/call_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_communication_call"
+            android:background="@drawable/white_circle_background"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

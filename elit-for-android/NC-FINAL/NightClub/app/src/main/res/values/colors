@@ -1,0 +1,17 @@
+<resources>
+    <color name="actionbar_background">#13d13d</color>
+    <color name="navigation_item_selected">#f9245e</color>
+    <color name="navigation_item">#1e2b44</color>
+    <color name="navigation_background">#1e2b44</color>
+
+    <color name="event_layout_background">#D60D176C</color>
+
+    <color name="event_name_background">#f9245e</color>
+    <color name="event_name_txt">#fff</color>
+
+    <color name="event_date_background">#000</color>
+    <color name="event_date_text">#fff</color>
+
+    <color name="light_text_color">#fff</color>
+
+</resources>

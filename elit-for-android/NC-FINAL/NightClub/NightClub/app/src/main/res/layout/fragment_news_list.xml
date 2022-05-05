@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/news_content_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/event_layout_background">
+
+        <LinearLayout
+            android:id="@+id/news_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/news_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/white"
+                android:dividerHeight="1dp">
+            </ListView>
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
